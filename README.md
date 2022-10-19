@@ -44,10 +44,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Les composants 
 
 - Landing page :
-* Navbar
-* Slider
-* Informations
-* Menu
+(Navbar / Slider / Informations / Menu / Reservation / HowItsWorks / Footer)
+
+- A propos : (History / Coordonnées / Footer)
 
 
 
