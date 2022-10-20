@@ -10,6 +10,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { FormHomeComponent } from './components/form-home/form-home.component';
+import { InfosComponent } from './infos/infos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormHomeComponent } from './components/form-home/form-home.component';
     MenuComponent,
     HomeComponent,
     SliderComponent,
-    FormHomeComponent
+    FormHomeComponent,
+    InfosComponent
   ],
   imports: [
     BrowserModule,
