@@ -18,6 +18,13 @@ import { HowItWOrksComponent } from './components/how-it-works/how-it-works.comp
 import { AdminComponent } from './pages/admin/admin.component';
 import { TeamComponent } from './components/team/team.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BoardAdminComponent } from './pages/board-admin/board-admin.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,14 +40,19 @@ import { TeamComponent } from './components/team/team.component';
     LoginComponent,
     FormLoginComponent,
     HowItWOrksComponent,
+    BoardAdminComponent,
     AdminComponent,
     TeamComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
