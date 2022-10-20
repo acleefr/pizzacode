@@ -16,6 +16,13 @@ import { LoginComponent } from './pages/login/login.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { HowItWOrksComponent } from './components/how-it-works/how-it-works.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BoardAdminComponent } from './pages/board-admin/board-admin.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,13 +37,18 @@ import { HowItWOrksComponent } from './components/how-it-works/how-it-works.comp
     InfosComponent,
     LoginComponent,
     FormLoginComponent,
-    HowItWOrksComponent
+    HowItWOrksComponent,
+    BoardAdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
