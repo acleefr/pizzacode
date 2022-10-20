@@ -1,72 +1,81 @@
-<div class=" mt-64 w-1/5 h-96  max-w-full mx-auto py-24 px-6">
-    <div class="card card-container">
+<div class="min-h-screen flex justify-center items-center">
+  <div class="py-12 px-12 bg-white rounded-2xl z-20">
 
-      <form
-        *ngIf="!isLoggedIn"
-        name="form"
-        (ngSubmit)="f.form.valid && onSubmit()"
-        #f="ngForm"
-        novalidate
-      >
 
-        <div class="form-group ">
-          <label for="username">Username</label>
-          <input
-            type="text"
-            class="form-control"
-            name="username"
-            [(ngModel)]="form.username"
-            required
-            #username="ngModel"
-          />
-          <div
-            class="alert alert-danger"
-            role="alert"
-            *ngIf="username.errors && f.submitted"
-          >
-            Username is required!
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            name="password"
-            [(ngModel)]="form.password"
-            required
-            minlength="6"
-            #password="ngModel"
-          />
-          <div
-            class="alert alert-danger"
-            role="alert"
-            *ngIf="password.errors && f.submitted"
-          >
-            <div *ngIf="['password.errors.required']">Password is required</div>
-            <div *ngIf="['password.errors.minlength']">
-              Password must be at least 6 characters
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary btn-block">
-            Login
-          </button>
-        </div>
-        <div class="form-group">
-          <div
-            class="alert alert-danger"
-            role="alert"
-            *ngIf="f.submitted && isLoginFailed"
-          >
-            Login failed: {{ errorMessage }}
-          </div>
-        </div>
-      </form>
-
-      <div class="alert alert-success" *ngIf="isLoggedIn">
-        Logged in as {{ roles }}.
+    <form
+      *ngIf="!isLoggedIn"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+      <div>
+        <img class="h-20 ml-275 " src="../../../assets/images/logo.png" alt="logo">
+        <h1
+          class="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white text-center">
+          Connexion</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-center">
+          Connectez vous pour modifier le contenu de votre site et de voir les demandes de réservation.
+        </p>
       </div>
+
+      <div class="space-y-4">
+        <input type="text"
+               class="form-control"
+               name="username"
+               [(ngModel)]="form.username"
+               required
+               #username="ngModel"
+               type="text"
+               placeholder="Adresse email"
+               class="block text-sm py-3 px-4 rounded-lg w-full border outline-none"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="username.errors && f.submitted"
+        >
+          Username is required!
+        </div>
+        <input type="password"
+               class="form-control"
+               name="password"
+               [(ngModel)]="form.password"
+               required
+               minlength="6"
+               #password="ngModel"
+               type="text"
+               placeholder="Mot de passe" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="password.errors && f.submitted"
+        >
+          <div *ngIf="['password.errors.required']">Password is required</div>
+          <div *ngIf="['password.errors.minlength']">
+            Password must be at least 6 characters
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <button class="button button-gradient bg-red mr-3 text-white">
+          <a href="/admin">Connexion</a>
+        </button>
+      </div>
+
+      <div class="form-group">
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="f.submitted && isLoginFailed"
+        >
+          Login failed: {{ errorMessage }}
+        </div>
+      </div>
+    </form>
+    <div class="alert alert-success" *ngIf="isLoggedIn">
+      Logged in as {{ roles }}.
     </div>
   </div>
+</div>
