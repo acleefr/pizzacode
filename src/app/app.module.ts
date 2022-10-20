@@ -15,6 +15,7 @@ import { InfosComponent } from './components/infos/infos.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { HowItWOrksComponent } from './components/how-it-works/how-it-works.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HowItWOrksComponent } from './components/how-it-works/how-it-works.comp
     InfosComponent,
     LoginComponent,
     FormLoginComponent,
-    HowItWOrksComponent
+    HowItWOrksComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
