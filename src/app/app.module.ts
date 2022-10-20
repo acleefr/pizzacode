@@ -14,13 +14,12 @@ import { FormHomeComponent } from './components/form-home/form-home.component';
 import { InfosComponent } from './components/infos/infos.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
-import { HowItWOrksComponent } from './how-it-works/how-it-works.component';
+import { HowItWOrksComponent } from './components/how-it-works/how-it-works.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-<<<<<<< HEAD
     ContactComponent,
     AboutComponent,
     MenuComponent,
@@ -30,10 +29,8 @@ import { HowItWOrksComponent } from './how-it-works/how-it-works.component';
     FormHomeComponent,
     InfosComponent,
     LoginComponent,
-    FormLoginComponent
-=======
+    FormLoginComponent,
     HowItWOrksComponent
->>>>>>> howItWorks
   ],
   imports: [
     BrowserModule,
