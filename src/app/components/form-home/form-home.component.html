@@ -1,0 +1,66 @@
+<section class="bg-white dark:bg-gray-900">
+    <div class="flex justify-center min-h-screen">
+        <div class="hidden bg-cover lg:block lg:w-2/5" style="background-image: url('https://camionapizzaangouleme.files.wordpress.com/2018/02/pizza-free-png-image.png')">
+        </div>
+
+        <div class="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
+            <div class="w-full">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">Demande de réservation</h1>
+
+                <p class="mt-4 text-gray-500 dark:text-gray-400">
+                    Pour faire une demande de réservation dans notre restaurant, veuillez remplir les champs de formulaire ci-dessous. Vous aurez une réponse rapide de l'état de votre demande de réservation.
+                </p>
+
+                <form class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
+                    <div>
+                        <label class="block mb-1 text-sm text-gray-600 dark:text-gray-200">Prénom / Nom</label>
+                        <input type="text" placeholder="Pierre Martin" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                    </div>
+
+                    <div>
+                        <label class="block mb-1 text-sm text-gray-600 dark:text-gray-200">Nombre de personne</label>
+                        <input type="number" placeholder="1" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                    </div>
+
+                    <div>
+                        <label class="block mb-1 text-sm text-gray-600 dark:text-gray-200">Numéro de téléphone</label>
+                        <input type="text" placeholder="06 66 29 74 98" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                    </div>
+
+                    <div>
+                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Adresse email</label>
+                        <input type="email" placeholder="p.martin@gmail.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                    </div>
+
+                    <div>
+                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Date</label>
+                        <input type="date" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                    </div>
+
+                    <div>
+                        <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200" for="hours">Horaire</label>
+                        <select id="hours" name="hours"  class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40">
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                        </select>
+                    </div>
+
+                    <button
+                        class="flex items-center justify-between w-full px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-red rounded-md">
+                        <span>Demande de réservation </span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rtl:-scale-x-100" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
