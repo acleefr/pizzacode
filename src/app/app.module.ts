@@ -15,6 +15,8 @@ import { InfosComponent } from './components/infos/infos.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { HowItWOrksComponent } from './components/how-it-works/how-it-works.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { TeamComponent } from './components/team/team.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BoardAdminComponent } from './pages/board-admin/board-admin.component';
@@ -38,7 +40,9 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     LoginComponent,
     FormLoginComponent,
     HowItWOrksComponent,
-    BoardAdminComponent
+    BoardAdminComponent,
+    AdminComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
