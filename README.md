@@ -31,14 +31,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Landing Page
 
-![1](/src/assets/maquettes/landing-page/1.PNG "1").
-![2](/src/assets/maquettes/landing-page/2.PNG "2").
-![3](/src/assets/maquettes/landing-page/3.PNG "3").
+![1](./src/assets/maquettes/landing-page/1.PNG "1").
+![2](./src/assets/maquettes/landing-page/2.PNG "2").
+![3](./src/assets/maquettes/landing-page/3.PNG "3").
 
 ### A propos
 
-![1](/src/assets/maquettes/a-propos/1.PNG "1").
-![2](/src/assets/maquettes/a-propos/2.PNG "2").
+![1](./src/assets/maquettes/a-propos/1.PNG "1").
+![2](./src/assets/maquettes/a-propos/2.PNG "2").
 
 
 ## Les composants 
