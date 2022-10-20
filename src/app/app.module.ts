@@ -12,6 +12,8 @@ import { MenuCardComponent } from './components/menu-card/menu-card.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { FormHomeComponent } from './components/form-home/form-home.component';
 import { InfosComponent } from './components/infos/infos.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FormLoginComponent } from './components/form-login/form-login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { InfosComponent } from './components/infos/infos.component';
     MenuCardComponent,
     SliderComponent,
     FormHomeComponent,
-    InfosComponent
+    InfosComponent,
+    LoginComponent,
+    FormLoginComponent
   ],
   imports: [
     BrowserModule,
