@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {Meeting} from '../model/meeting.model';
+import {Meeting} from '../model/pizza.model';
 
 const API_URL = 'http://localhost:8080/api/test/';
 @Injectable({

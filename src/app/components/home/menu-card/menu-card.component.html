@@ -45,156 +45,28 @@
     </div>
     <div class="flex flex-wrap items-center lg:justify-between justify-center">
         <!-- Card 1 -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
+        <div *ngFor="let pizza of content" tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
             <div>
                 <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
             </div>
             <div class="bg-white">
               <div class="p-4">
                   <div class="flex items-center">
-                      <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
+                      <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>{{pizza.name}}</strong></h2>
                   </div>
-                  <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
+                  <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">{{pizza.recipe}}</p>
                   <div class="flex mt-4">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
+                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">{{pizza.price}}€</h2>
                   </div>
               </div>
             </div>
         </div>
         <!-- Card 1 Ends -->
-        <!-- Card 2 -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
-          <div>
-              <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
-          </div>
-          <div class="bg-white">
-            <div class="p-4">
-                <div class="flex items-center">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
-                </div>
-                <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
-                <div class="flex mt-4">
-                  <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 2 Ends -->
-        <!-- Card 3  -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
-          <div>
-              <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
-          </div>
-          <div class="bg-white">
-            <div class="p-4">
-                <div class="flex items-center">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
-                </div>
-                <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
-                <div class="flex mt-4">
-                  <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 Ends -->
-        <!-- Card 4  -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
-          <div>
-              <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
-          </div>
-          <div class="bg-white">
-            <div class="p-4">
-                <div class="flex items-center">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
-                </div>
-                <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
-                <div class="flex mt-4">
-                  <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 4 Ends -->
-    </div>
-    
-    <div class="flex flex-wrap items-center lg:justify-between justify-center pb-10 mt-16">
-        <!-- Card 1 -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
-          <div>
-              <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
-          </div>
-          <div class="bg-white">
-            <div class="p-4">
-                <div class="flex items-center">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
-                </div>
-                <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
-                <div class="flex mt-4">
-                  <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 1 Ends -->
-        <!-- Card 2 -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
-          <div>
-              <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
-          </div>
-          <div class="bg-white">
-            <div class="p-4">
-                <div class="flex items-center">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
-                </div>
-                <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
-                <div class="flex mt-4">
-                  <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 2 Ends -->
-        <!-- Card 3  -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
-          <div>
-              <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
-          </div>
-          <div class="bg-white">
-            <div class="p-4">
-                <div class="flex items-center">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
-                </div>
-                <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
-                <div class="flex mt-4">
-                  <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 Ends -->
-        <!-- Card 4  -->
-        <div tabindex="0" class="focus:outline-none mx-2 w-72 xl:mb-0 mb-8">
-          <div>
-              <img alt="person capturing an image" src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-23.png" tabindex="0" class="focus:outline-none w-full h-44" />
-          </div>
-          <div class="bg-white">
-            <div class="p-4">
-                <div class="flex items-center">
-                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold"><strong>Reine</strong></h2>
-                </div>
-                <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">Crème fraîche légère française, mozzarella, lardons fumés, pommes de terre françaises sautées, Reblochon de Savoie AOP, origan.</p>
-                <div class="flex mt-4">
-                  <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">11,50€</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 4 Ends -->
     </div>
     <div class="mr-auto place-self-center mb-50">
       <a href="/menu" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-red hover:bg-red">
-          Voir toutes les pizzas !  
+          Voir toutes les pizzas !
       </a>
-  </div>  
+  </div>
+</div>
 </div>
