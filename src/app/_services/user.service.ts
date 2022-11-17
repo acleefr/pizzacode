@@ -5,7 +5,7 @@ import {Pizza} from '../model/pizza.model';
 import {Booking} from "../model/booking.model";
 import {Contact} from "../model/contact.model";
 
-const API_URL = 'http://localhost:8080/api/default/';
+const API_URL = 'https://app-spring-boot-pizzacode.herokuapp.com/api/default/';
 
 @Injectable({
   providedIn: 'root'
